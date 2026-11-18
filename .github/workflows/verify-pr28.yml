@@ -1,0 +1,15 @@
+name: Verify ARMOR PR 28 under SHA pinning
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  armor:
+    uses: qualcomm/armor-checkers/.github/workflows/armor-checker.yml@bdff098233cf61c205dd0267f07fb0ff5311a2cf
+    with:
+      base-sha: ${{ github.sha }}
+      head-sha: ${{ github.sha }}
+      branch-name: main
