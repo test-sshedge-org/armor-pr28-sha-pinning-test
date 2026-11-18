@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   armor:
-    uses: qualcomm/armor-checkers/.github/workflows/armor-checker.yml@bdff098233cf61c205dd0267f07fb0ff5311a2cf
+    uses: test-sshedge-org/test-armor-checkers/.github/workflows/armor-checker.yml@61b5c25807b589d299cc3b888f8e9e8218ae9ae6
     with:
       base-sha: ${{ github.sha }}
       head-sha: ${{ github.sha }}
